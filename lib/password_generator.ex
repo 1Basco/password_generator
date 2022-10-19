@@ -14,6 +14,8 @@ defmodule PasswordGenerator do
 
   @allowed_options [:lenght, :numbers, :uppercase, :symbols]
 
+  @symbols "!#$%&()*+,-./|:;<=>[]@_{}~^"
+
   @doc """
   Generates a random password for giver options:
 
@@ -114,6 +116,23 @@ defmodule PasswordGenerator do
 
   defp get(:lowecase_letter) do
     <<Enum.random(?a..?z)>>
+  end
+
+  defp get(:uppercase) do
+    <<Enum.random(?A..?Z)>>
+  end
+
+  defp get(:numbers) do
+    Enum.random(0..9)
+    |> Integer.to_string()
+  end
+
+  defp get(:symbols) do
+    symbols =
+      @symbols
+      |> String.split("", trim: true)
+
+    Enum.random(symbols)
   end
 
   defp generate_random_strings(length, options) do
