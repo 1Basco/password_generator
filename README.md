@@ -1,21 +1,7 @@
 # PasswordGenerator
 
-**TODO: Add description**
+**TODO:**
+-[]: Add description on how to run it
+-[]: Finish 4real this time
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `password_generator` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:password_generator, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/password_generator>.
-
+Created while watching the awsome crash course of Elixir from [Elixirprogrammer video](https://www.youtube.com/watch?v=gRQIPvDFuts)
