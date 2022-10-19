@@ -164,6 +164,8 @@ defmodule PasswordGeneratorTest do
 
     {:ok, result} = PasswordGenerator.generate(options_all)
 
+    IO.puts("The restuls of the full password was: #{result}")
+
     assert String.contains?(result, options.numbers)
     assert String.contains?(result, options.uppercase)
     assert String.contains?(result, options.symbols)
